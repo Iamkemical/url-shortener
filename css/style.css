@@ -711,3 +711,75 @@ footer .container .social-links ul li a img:hover {
     gap: 20px;
   }
 }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  #hero {
+    height: 85vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 102%;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  #hero {
+    height: 90vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 112%;
+  }
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (orientation: landscape) {
+  #hero {
+    height: 110vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 130%;
+  }
+}
+
+@media only screen and (min-device-width: 430px) and (max-device-width: 932px) and (orientation: landscape) {
+  #hero {
+    height: 110vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 130%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #hero {
+    height: 70vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  #hero {
+    height: 195vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 230%;
+  }
+}
