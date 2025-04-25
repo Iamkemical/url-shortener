@@ -762,13 +762,13 @@ footer .container .social-links ul li a img:hover {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   #hero {
-    height: 70vh;
+    height: 90vh;
   }
 
   #url-shortner {
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 110%;
   }
 }
 
@@ -781,5 +781,29 @@ footer .container .social-links ul li a img:hover {
     position: absolute;
     left: 50%;
     top: 230%;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  #hero {
+    height: 70vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
+  #hero {
+    height: 105vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 125%;
   }
 }
