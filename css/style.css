@@ -807,3 +807,15 @@ footer .container .social-links ul li a img:hover {
     top: 125%;
   }
 }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 720px) {
+  #hero {
+    height: 85vh;
+  }
+
+  #url-shortner {
+    position: absolute;
+    left: 50%;
+    top: 103%;
+  }
+}
