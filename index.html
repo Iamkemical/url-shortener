@@ -92,16 +92,19 @@
 
     <div id="url-shortner" class="section-padding">
       <div class="container">
-        <form action="" method="post">
-          <input type="text" placeholder="Shorten your link here..." />
-          <button class="btn">Shorten It!</button>
-        </form>
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="Shorten your link here..."
+        />
+        <button class="btn" id="shortenedBtn">Shorten It!</button>
       </div>
     </div>
 
     <!-- Statistics Section -->
     <section id="statistics" class="section-padding">
       <div class="container">
+        <div id="shortened-links"></div>
         <h2>Advanced Statistics</h2>
         <h5>
           Track how your links are performing across the web with<br />our

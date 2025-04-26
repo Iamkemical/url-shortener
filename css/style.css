@@ -45,12 +45,6 @@ img {
 }
 
 /* Navbar */
-/* nav {
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-} */
 
 nav .container {
   display: flex;
@@ -165,7 +159,7 @@ nav .container .nav-links-main ul li button:hover {
   width: 100%;
 }
 
-#url-shortner .container form input {
+#url-shortner .container input {
   padding: 15px 10px;
   margin: 0 10px 0 38px;
   width: 70%;
@@ -174,12 +168,12 @@ nav .container .nav-links-main ul li button:hover {
   border: none;
 }
 
-#url-shortner .container form button {
+#url-shortner .container button {
   padding: 13px 20px;
   border-radius: 4px;
 }
 
-#url-shortner .container form button:hover {
+#url-shortner .container button:hover {
   filter: brightness(1.15);
 }
 
@@ -193,6 +187,48 @@ nav .container .nav-links-main ul li button:hover {
 #statistics .container {
   text-align: center;
   color: var(--very-dark-blue);
+}
+
+#statistics .container #shortened-links {
+  margin: 5px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link-item {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link-item .link-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  background: #f0f1f6;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.link-text a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.copy-btn {
+  background: var(--cyan);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-btn.copied {
+  background: var(--very-dark-violet);
 }
 
 #statistics .container h5 {
@@ -468,11 +504,11 @@ footer .container .social-links ul li a img:hover {
     padding: 20px 0;
   }
 
-  #url-shortner .container form input {
+  #url-shortner .container input {
     padding: 10px 10px;
   }
 
-  #url-shortner .container form button {
+  #url-shortner .container button {
     padding: 9px 20px;
   }
 
@@ -531,7 +567,7 @@ footer .container .social-links ul li a img:hover {
     background-image: url("/images/bg-boost-mobile.svg");
   }
 
-  #url-shortner .container form button {
+  #url-shortner .container button {
     margin: 10px 0 0 35px;
     width: 72%;
   }
