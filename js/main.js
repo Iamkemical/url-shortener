@@ -103,6 +103,18 @@ function displayLink(original, shortened) {
         </div>
       `;
   linksContainer.appendChild(linkItem);
+
+  const copyBtn = linkItem.querySelector(".copy-btn");
+
+  copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(data.result_url);
+    copyBtn.textContent = "Copied!";
+    copyBtn.classList.add("copied");
+    setTimeout(() => {
+      copyBtn.textContent = "Copy";
+      copyBtn.classList.remove("copied");
+    }, 2000);
+  });
 }
 
 function removeLink(shortUrl) {

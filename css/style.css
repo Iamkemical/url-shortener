@@ -131,6 +131,10 @@ nav .container .nav-links-main ul li button:hover {
   margin-top: 25px;
 }
 
+#hero .container .hero-content button:hover {
+  filter: brightness(1.15);
+}
+
 /* Url Shortener Section */
 #url-shortner {
   position: absolute;
@@ -512,6 +516,16 @@ footer .container .social-links ul li a img:hover {
     padding: 9px 20px;
   }
 
+  .link-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #statistics {
+    padding: 50px 0 0 0;
+  }
+
   #statistics .container .statistics-content {
     margin: 60px 0 0 0;
   }
@@ -570,6 +584,15 @@ footer .container .social-links ul li a img:hover {
   #url-shortner .container button {
     margin: 10px 0 0 35px;
     width: 72%;
+  }
+
+  #statistics .container #shortened-links {
+    margin: 40px 15px 20px 15px;
+  }
+
+  .link-item .link-text {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   #statistics .container h5 {
