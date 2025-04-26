@@ -77,10 +77,10 @@ function saveLink(originalUrl, shortUrl) {
 
   localStorage.setItem("shortLinks", JSON.stringify(storedLinks));
 
-  // Set a timer to remove after 20 seconds
+  // Set a timer to remove after 60 seconds
   setTimeout(() => {
     removeLink(shortUrl);
-  }, 20000); // 20000 ms = 20 seconds
+  }, 60000); // 60000 ms = 60 seconds
 }
 
 function loadLinks() {
