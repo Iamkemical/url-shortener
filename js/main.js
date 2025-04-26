@@ -77,10 +77,10 @@ function saveLink(originalUrl, shortUrl) {
 
   localStorage.setItem("shortLinks", JSON.stringify(storedLinks));
 
-  // Set a timer to remove after 30 seconds
+  // Set a timer to remove after 20 seconds
   setTimeout(() => {
     removeLink(shortUrl);
-  }, 30000); // 30000 ms = 30 seconds
+  }, 20000); // 20000 ms = 20 seconds
 }
 
 function loadLinks() {
@@ -107,7 +107,7 @@ function displayLink(original, shortened) {
   const copyBtn = linkItem.querySelector(".copy-btn");
 
   copyBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText(data.result_url);
+    navigator.clipboard.writeText(shortened);
     copyBtn.textContent = "Copied!";
     copyBtn.classList.add("copied");
     setTimeout(() => {
